@@ -3,7 +3,7 @@ import connectDB from "@/db/mongodb";
 import Email from "@/models/Email";
 
 export async function GET(req) {
-  return NextResponse.json({ message: "Email already exist" }, { status: 500 });
+  return NextResponse.json({ message: "Email already exists" }, { status: 500 });
 }
 
 export async function POST(req) {
@@ -20,7 +20,7 @@ export async function POST(req) {
     if (checkEmail) {
       // return new Error("Email already exist");
       return NextResponse.json(
-        { message: "Email already exist" },
+        { message: "Email already exists" },
         { status: 500 }
       );
       console.log("Hey");
