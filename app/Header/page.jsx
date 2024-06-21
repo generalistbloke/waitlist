@@ -9,8 +9,7 @@ import { useTheme } from "next-themes";
 
 import {
   PiTwitterLogoThin,
-  PiInstagramLogoThin,
-  PiGithubLogoLight,
+  PiInstagramLogoThin
 } from "react-icons/pi";
 
 import {
