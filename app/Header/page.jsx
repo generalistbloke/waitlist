@@ -79,32 +79,24 @@ let textvariant = {
 // ];
 
 let Icons = [
-  { name: <PiTwitterLogoThin />, href: "https://twitter.com/Joenaldo" },
-  { name: <PiInstagramLogoThin />, href: "https://instagram.com/Joscriptt " },
-  { name: <PiGithubLogoLight />, href: "https://github.com/Joscriptt" },
+  { name: <PiTwitterLogoThin />, href: "https://twitter.com/generalistbloke" },
+  { name: <PiInstagramLogoThin />, href: "https://instagram.com/generalistbloke " },
 ];
 
 const people = [
   {
     id: 1,
     name: "INSTAGRAM",
-    designation: "@Joscriptt",
+    designation: "@GeneralistBloke",
     image: "/img/time.png",
-    href: "https://instagram.com/Joscriptt ",
+    href: "https://instagram.com/generalistbloke ",
   },
   {
     id: 2,
     name: "TWITTER",
-    designation: "@Joenaldo",
+    designation: "@GeneralistBloke",
     image: "/img/alarm.png",
-    href: "https://twitter.com/Joenaldo",
-  },
-  {
-    id: 3,
-    name: "GITHUB",
-    designation: "Joscriptt",
-    image: "/img/party.png",
-    href: "https://github.com/Joscriptt",
+    href: "https://twitter.com/generalistbloke",
   },
 ];
 
