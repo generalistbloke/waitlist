@@ -312,7 +312,7 @@ function PageHook() {
             <RecievedModal
               isOpenModel={isOpenModel}
               setIsOpenModel={setIsOpenModel}
-            />*/
+            />
           </div>
         </div>
         {/* {isOpenModel && <p>Submitted</p>} */}
