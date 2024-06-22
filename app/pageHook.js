@@ -125,11 +125,11 @@ function PageHook() {
             <div className="flex justify-center">
               {/* You can use video here as well */}
               <Image
-                width={128}
-                height={128}
-                alt="shake head"
-                src={"/img/shake.gif"}
-                className="w-32"
+                // width={128}
+                // height={128}
+                // alt="shake head"
+                // src={"/img/shake.gif"}
+                // className="w-32"
               />
             </div>
             <div className="flex items-center justify-center">
@@ -205,20 +205,22 @@ function PageHook() {
                 control={control}
                 defaultValue=""
                 render={({ field }) => (
-                  <input
-                    {...field}
-                    type="email"
-                    placeholder="Email"
-                    className={` flex-1 py-2.5  outline-none focus:border-2 focus:border-neutral-100 dark:border bg-opacity-20 shadow-md border 
+                  // <input
+                  //   {...field}
+                  //   type="email"
+                  //   placeholder="Email"
+                  //   className={` flex-1 py-2.5  outline-none focus:border-2 focus:border-neutral-100 dark:border bg-opacity-20 shadow-md border 
                     
-                    border-neutral-400   dark:text-white dark:border-white/20 placeholder:text-neutral-500  pl-5 rounded-lg focus-within:border-none ${
-                      isDirty && !isValid
-                        ? "bg-[#f5a524] "
-                        : isDirty && isValid
-                        ? "bg-green-500"
-                        : ""
-                    }`}
-                  />
+                  //   border-neutral-400   dark:text-white dark:border-white/20 placeholder:text-neutral-500  pl-5 rounded-lg focus-within:border-none ${
+                  //     isDirty && !isValid
+                  //       ? "bg-[#f5a524] "
+                  //       : isDirty && isValid
+                  //       ? "bg-green-500"
+                  //       : ""
+                  //   }`}
+                  // />
+                  <script async data-uid="26f6bc2e32" src="https://my-biopik.ck.page/26f6bc2e32/index.js">  
+                  </script>
                 )}
                 rules={{
                   required: "You forgot entering your email, buddy!",
@@ -227,7 +229,7 @@ function PageHook() {
                 }}
               />
 
-              <button
+              {/* <button
                 disabled={isSubmitting}
                 className="flex items-center justify-center gap-x-3 bg-gradient-to-tr from-black from-50% via-black/40 to-gray-600/40 via-45% border-t-gray-700  disabled:cursor-not-allowed lg:w-36 shadow-md  border border-b-0 border-r-0 border-l-0 bg-black  mt-4 lg:mt-0 rounded-md px-2 py-2.5 w-full  font-InterMedium text-sm text-gray-200 dark:text-gray-500 "
                 type="submit"
@@ -238,7 +240,7 @@ function PageHook() {
                 ) : (
                   <span className="shrink-0">sign me up, babe!</span>
                 )}
-              </button>
+              </button> */}
 
               {people.map((testimonial, idx) => (
                 <div
@@ -413,12 +415,12 @@ const RecievedModal = ({ isOpenModel, setIsOpenModel }) => {
               alt=""
             />
             <h1 className="text-3xl font-InterBold text-center">
-              Welcome onboard! We see your email in the waitlist.
+              welcome onboard! We see your email in the waitlist.
             </h1>
 
             <div className="relative z-10">
               <p className=" text-center text-lg mt-4  mb-6">
-                We'll send a notification as soon as My Biopik is ready for you to
+                we'll send a notification as soon as My Biopik is ready for you to
                 experience.
               </p>
               <div className="flex gap-2">
