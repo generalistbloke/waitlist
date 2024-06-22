@@ -125,11 +125,11 @@ function PageHook() {
             <div className="flex justify-center">
               {/* You can use video here as well */}
               <Image
-                // width={128}
-                // height={128}
-                // alt="shake head"
-                // src={"/img/shake.gif"}
-                // className="w-32"
+                width={128}
+                height={128}
+                alt="shake head"
+                src={"/Users/prabir-19092/Documents/Waitlist/waitlist/public/img/avatar.gif"}
+                className="w-32"
               />
             </div>
             <div className="flex items-center justify-center">
