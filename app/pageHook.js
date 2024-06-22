@@ -23,7 +23,7 @@ const people = [
   {
     id: 1,
     name: "JOIN NOW",
-    designation: "Well, if u want early access, just DUCKING signup",
+    designation: "well, if u want early access, just fkng signup",
     image: "/img/email.png",
     href: "https://instagram.com/generalistbloke",
   },
@@ -98,7 +98,7 @@ function PageHook() {
 
       if (!res.ok) {
         reset();
-        throw new Error({ message: "Email already exists" });
+        throw new Error({ message: "we see this email in our systems already" });
       }
     } catch (error) {
       console.log(error);
@@ -168,11 +168,10 @@ function PageHook() {
               </p> */}
             </div>
             <h1 className="text-3xl font-bold  sm:text-5xl xl:text-6xl/none bg-clip-text text-transparent dark:bg-gradient-to-r bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-800 capitalize md:max-w-2xl lg:max-w-3xl mx-auto ">
-            Speak your day, watch your year. Your life, your movie!
+            speak your day, watch your year!
             </h1>
-            <p className="max-w-[600px]  leading-7 text-center text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
-              Capture the ravishing experience of watching yourself as the main character in a movie. We plan to show you how you have lived your year, as a short movie. Sign up to our
-              waitlist to be notified when we launch! After all, you want to watch yourself grow. Don't you? 
+            <p className="max-w-[600px]  leading-7 text-left text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
+              capture the exhilarating experience of watching yourself as the main character in a movie. sign up to our waitlist to be notified when we launch! After all, you want to watch yourself grow. don't you? 
             </p>
             {errors.email && (
               <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
@@ -235,9 +234,9 @@ function PageHook() {
               >
                 <TbArrowsJoin2 className="text-[#383127]" />
                 {isSubmitting ? (
-                  "loading "
+                  "getting there..."
                 ) : (
-                  <span className="shrink-0">Sign me up, babe!</span>
+                  <span className="shrink-0">sign me up, babe!</span>
                 )}
               </button>
 
@@ -300,14 +299,14 @@ function PageHook() {
           </div>
           <div className="p-3 rounded-lg border dark:border-white/10 border-neutral-400 dark:border-opacity-10 relative top-14 sm:top-14 lg:top-24 max-w-xl mx-auto flex flex-col lg:flex-row justify-between items-center text-sm">
             <p className=" text-zinc-500 dark:text-zinc-100">
-              Get ready to redefine your reflecting experience.
+              Get ready to redefine your reflection experience.
             </p>
             <Link
               onClick={() => setIsOpen(true)}
               className=" bg-zinc-700/30 lg:py-1 py-2 px-2 w-full lg:w-fit mt-3 md:mt-3 lg:mt-0 text-center rounded-md  text-white"
               href="/"
             >
-            <span>Terms & Conditions</span>
+            <span>a heartfelt note</span>
             </Link>
             <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
             <RecievedModal
@@ -358,14 +357,14 @@ const SpringModal = ({ isOpen, setIsOpen }) => {
 
             <div className="relative z-10">
               <p className="lg:text-justify  leading-6 mb-6">
-                We are building My Biopik with a lot of love. We count on your support on each step. Please be with us, share feedback about everything, including this landing page. We assure you we will do our best to stand upto your expectations. 
+                we are building my biopik with lots of love. when you get access to the app, hope you stick to it and provide feedback so that we can improve your experience. 
               </p>
               <div className="flex gap-2">
                 <button
                   onClick={() => setIsOpen(false)}
                   className=" flex gap-x-3 items-center justify-center lg:justify-start bg-transparent bg-white text-black hover:bg-neutral-300  transition-colors duration-200 dark:text-black font-semibold lg:w-fit w-full py-2 lg:py-1.5 rounded px-8"
                 >
-                  Gotcha!
+                  gotcha!
                   <Image
                     width={5}
                     height={5}
