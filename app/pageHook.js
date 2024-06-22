@@ -127,8 +127,8 @@ function PageHook() {
               <Image
                 width={128}
                 height={128}
-                alt="shake head"
-                src={"/Users/prabir-19092/Documents/Waitlist/waitlist/public/img/avatar.gif"}
+                alt="wink"
+                src={"/public/img/avatar.gif"}
                 className="w-32"
               />
             </div>
