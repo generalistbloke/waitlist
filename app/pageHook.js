@@ -5,6 +5,8 @@
 import { PiWarningThin } from "react-icons/pi";
 import { TbArrowsJoin2 } from "react-icons/tb";
 
+import SignUpForm from "/Users/prabir-19092/Documents/GitHub/waitlist/app/signupform.js"
+
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
@@ -200,7 +202,7 @@ function PageHook() {
                 type="email"
               /> */}
 
-              <Controller
+              {/*<Controller
                 name="email"
                 control={control}
                 defaultValue=""
@@ -221,11 +223,12 @@ function PageHook() {
                   // />
                   <script async data-uid="26f6bc2e32" src="https://my-biopik.ck.page/26f6bc2e32/index.js">  
                   </script>
-                )}
-                rules={{
-                  required: "You forgot entering your email, buddy!",
-                  validate: (value) =>
-                    validateEmail(value) || " Oops! that's an invalid email",
+                )}*/}
+                <SignUpForm
+                  rules={{
+                    required: "You forgot entering your email, buddy!",
+                    validate: (value) =>
+                      validateEmail(value) || " Oops! that's an invalid email",
                 }}
               />
 
