@@ -148,6 +148,7 @@
 import React, { useEffect } from 'react';
 import './signupform.css';
 import { TbArrowsJoin2 } from "react-icons/tb";
+import { PiWarningThin } from "react-icons/pi";
 
 const ConvertKitForm = () => {
   useEffect(() => {
@@ -188,6 +189,13 @@ const ConvertKitForm = () => {
         <TbArrowsJoin2 />
         <span>sign me up, babe</span>
       </button>
+
+      {errors.email && (
+      <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white mt-2">
+        <PiWarningThin className="text-[#704705] dark:text-white text-lg" />
+        Email is required!
+      </p>
+    )}
     </form>
   );
 };

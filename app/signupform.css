@@ -1,11 +1,11 @@
-.formkit-form {
+/* .formkit-form {
     display: flex;
     align-items: center;
-    max-width: 600px;
+    max-width: 900px;
     margin: 0 auto;
     padding: 10px;
   }
-  
+   */
   .formkit-fields {
     display: flex;
     flex-grow: 1;
@@ -70,9 +70,9 @@
     border-radius: 0.375rem;
     padding: 0.625rem 0.5rem;
     width: 100%;
-    font-family: 'Inter', sans-serif;
+    font-family: 'manrope';
     font-weight: 500;
-    font-size: 0.875rem;
+    font-size: 1rem;
     color: #e2e8f0;
     transition: all 0.3s ease;
     overflow: hidden;
