@@ -162,16 +162,17 @@
   .formkit-input,
 .formkit-submit {
   height: 40px; /* Adjust to match your design */
-  border-radius: 4px; /* Half of the height for rounded corners */
+  border-radius: 6px; /* Half of the height for rounded corners */
 }
 
 .formkit-input {
+
   padding: 0 15px;
   border: 1px solid #ccc;
 }
 
 .formkit-submit {
-  padding: 0 20px;
+  padding: 20px 20px 20px 20px;
   color: white;
   font-weight: bold;
   border: none;
