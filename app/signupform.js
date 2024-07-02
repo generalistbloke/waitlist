@@ -88,6 +88,12 @@ const ConvertKitForm = () => {
       data-version="5"
       data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"welcome onboard! We see your email in the waitlist.\n we will send a notification as soon as My Biopik is ready for you to experience.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
       min-width="400 500 600 700 800"
+      style={{
+        display: 'flex',
+        flexDirection: 'column',
+        maxWidth: '300px',
+        margin: '0 auto',
+      }}
     >
       <div data-style="clean">
         <ul
@@ -110,6 +116,8 @@ const ConvertKitForm = () => {
               type="email"
             />
           </div>
+        
+
           <button data-element="submit" className="formkit-submit formkit-submit">
             <div className="formkit-spinner">
               <div></div>
