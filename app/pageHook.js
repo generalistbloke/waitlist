@@ -35,7 +35,6 @@ import { useForm, Controller } from "react-hook-form";
 // import { zodResolver } from "@hookform/resolvers/zod";
 // Zod
 import { z } from "zod";
-import ConvertKitForm from "./signupform";
 
 // const emailSchema = z.object({
 //   email: z.string().email()

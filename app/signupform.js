@@ -68,7 +68,7 @@ import React, { useEffect } from 'react';
 const ConvertKitForm = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = '"https://f.convertkit.com/ckjs/ck.5.js"';
+    script.src = 'https://f.convertkit.com/ckjs/ck.5.js';
     script.async = true;
     document.body.appendChild(script);
 
