@@ -17,4 +17,69 @@
   .input-style.valid {
     background-color: #22c55e;
   }
+
+  .formkit-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    background-image: linear-gradient(to top right, black 50%, rgba(0, 0, 0, 0.4) 45%, rgba(128, 128, 128, 0.4));
+    border-top: 1px solid #4a5568;
+    border-right: none;
+    border-bottom: none;
+    border-left: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    margin-top: 1rem;
+    border-radius: 0.375rem;
+    padding: 0.625rem 0.5rem;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #e2e8f0;
+    transition: all 0.3s ease;
+  }
+  
+  .formkit-submit:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+  
+  .formkit-submit:hover:not(:disabled) {
+    background-image: linear-gradient(to top right, #1a202c 50%, rgba(26, 32, 44, 0.4) 45%, rgba(128, 128, 128, 0.4));
+  }
+  
+  @media (min-width: 1024px) {
+    .formkit-submit {
+      width: 9rem;
+      margin-top: 0;
+    }
+  }
+  
+  .formkit-submit .formkit-spinner {
+    display: flex;
+  }
+  
+  .formkit-submit .formkit-spinner > div {
+    width: 8px;
+    height: 8px;
+    background-color: #383127;
+    border-radius: 100%;
+    display: inline-block;
+    animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+    margin: 0 2px;
+  }
+  
+  .formkit-submit .formkit-spinner > div:nth-child(1) {
+    animation-delay: -0.32s;
+  }
+  
+  .formkit-submit .formkit-spinner > div:nth-child(2) {
+    animation-delay: -0.16s;
+  }
+  
+  @keyframes sk-bouncedelay {
+    0%, 80%, 100% { transform: scale(0); }
+    40% { transform: scale(1.0); }
+  }
   
