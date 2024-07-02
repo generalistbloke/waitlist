@@ -95,6 +95,7 @@ const ConvertKitForm = () => {
 
   return (
     <form
+      style={formStyle}
       action="https://my-biopik.ck.page/26f6bc2e32"
       className="seva-form formkit-form"
       method="post"
@@ -118,7 +119,7 @@ const ConvertKitForm = () => {
         >
           <div className="formkit-field">
             <input
-              className="formkit-input"
+              className="formkit-input input-style"
               name="email_address"
               aria-label="Email Address"
               placeholder="Email Address"
