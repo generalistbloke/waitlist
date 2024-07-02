@@ -68,7 +68,7 @@ import React, { useEffect } from 'react';
 const ConvertKitForm = () => {
   useEffect(() => {
     const script = document.createElement('script');
-    script.src = 'https://f.convertkit.com/ckjs/ck.5.js';
+    script.src = '"https://f.convertkit.com/ckjs/ck.5.js"';
     script.async = true;
     document.body.appendChild(script);
 
@@ -79,7 +79,7 @@ const ConvertKitForm = () => {
 
   return (
     <form
-      action="https://app.convertkit.com/forms/26f6bc2e32/subscriptions"
+      action="https://my-biopik.ck.page/26f6bc2e32"
       className="seva-form formkit-form"
       method="post"
       data-sv-form="6739907"
