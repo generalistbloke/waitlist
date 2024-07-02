@@ -95,13 +95,11 @@ const ConvertKitForm = () => {
         margin: '0 auto',
         outline-none,
         focus:border-2, 
-        focus:border-neutral-100 
-        dark:border 
-        dark:bg-opacity-20 
-        shadow-md border 
-        border-neutral-400   
-        dark:text-white 
-        dark:border-white/20 
+        focus:border-neutral-100, 
+        dark:border, dark:bg-opacity-20 shadow-md border 
+        border-neutral-400,   
+        dark:text-white, 
+        dark:border-white/20
                 
       }}
     >
