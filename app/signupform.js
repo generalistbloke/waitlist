@@ -148,9 +148,11 @@
 import React, { useEffect } from 'react';
 import './signupform.css';
 import { TbArrowsJoin2 } from "react-icons/tb";
-import { PiWarningThin } from "react-icons/pi";
+import { useForm } from 'react-hook-form';
 
 const ConvertKitForm = () => {
+  const { register, handleSubmit, formState: { errors } } = useForm();
+
   useEffect(() => {
     const script = document.createElement('script');
     script.src = 'https://f.convertkit.com/ckjs/ck.5.js';
@@ -162,11 +164,15 @@ const ConvertKitForm = () => {
     };
   }, []);
 
+  const onSubmit = (data) => {
+    // Your form submission logic here
+    console.log(data);
+  };
+
   return (
     <form
-      action="https://my-biopik.ck.page/26f6bc2e32"
+      onSubmit={handleSubmit(onSubmit)}
       className="seva-form formkit-form"
-      method="post"
       data-sv-form="6739907"
       data-uid="26f6bc2e32"
       data-format="inline"
@@ -176,26 +182,28 @@ const ConvertKitForm = () => {
       <div className="formkit-fields">
         <div className="formkit-field">
           <input
+            {...register('email', { required: 'Email is required' })}
             className="formkit-input"
             name="email_address"
             aria-label="Email"
             placeholder="email address here"
-            required=""
             type="email"
           />
         </div>
       </div>
-      <button data-element="submit" className="formkit-submit">
+      <button type="submit" className="formkit-submit">
         <TbArrowsJoin2 />
         <span>sign me up, babe</span>
       </button>
 
       {errors.email && (
-      <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white mt-2">
-        <PiWarningThin className="text-[#704705] dark:text-white text-lg" />
-        Email is required!
-      </p>
-    )}
+        <p className="error-message">
+          <svg className="error-icon" stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 256 256" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+            <path d="M233.34,190.09L145.88,38.22h0a20.75,20.75,0,0,0-35.76,0L22.66,190.09a19.52,19.52,0,0,0,0,19.71A20.36,20.36,0,0,0,40.54,220H215.46a20.36,20.36,0,0,0,17.86-10.2A19.52,19.52,0,0,0,233.34,190.09ZM226.4,205.8a12.47,12.47,0,0,1-10.94,6.2H40.54a12.47,12.47,0,0,1-10.94-6.2,11.45,11.45,0,0,1,0-11.72L117.05,42.21a12.76,12.76,0,0,1,21.9,0L226.4,194.08A11.45,11.45,0,0,1,226.4,205.8ZM124,144V104a4,4,0,0,1,8,0v40a4,4,0,0,1-8,0Zm12,36a8,8,0,1,1-8-8A8,8,0,0,1,136,180Z"></path>
+          </svg>
+          {errors.email.message}
+        </p>
+      )}
     </form>
   );
 };
