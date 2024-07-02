@@ -5,12 +5,11 @@
 import { PiWarningThin } from "react-icons/pi";
 import { TbArrowsJoin2 } from "react-icons/tb";
 
-import ConvertKitForm from "/Users/prabir-19092/Documents/GitHub/waitlist/app/signupform.js"
-
 import Link from "next/link";
 import { useState } from "react";
 import Image from "next/image";
 
+import ConvertKitForm from "./signupform";
 import {
   AnimatePresence,
   motion,
@@ -36,6 +35,7 @@ import { useForm, Controller } from "react-hook-form";
 // import { zodResolver } from "@hookform/resolvers/zod";
 // Zod
 import { z } from "zod";
+import ConvertKitForm from "./signupform";
 
 // const emailSchema = z.object({
 //   email: z.string().email()
@@ -129,7 +129,7 @@ function PageHook() {
               <Image
                 width={128}
                 height={128}
-                alt="wink"
+                alt="avatar"
                 src={"/public/img/avatar.gif"}
                 className="w-32"
               />
@@ -173,7 +173,7 @@ function PageHook() {
             speak your day, watch your year!
             </h1>
             <p className="max-w-[600px]  leading-7 text-left text-[16px] bg-clip-text text-transparent dark:bg-gradient-to-br bg-gradient-to-tr dark:from-white from-black to-neutral-600 dark:to-neutral-700 mx-auto ">
-              capture the experience watching yourself as the main character in a movie. sign up to our waitlist to be notified when we launch! after all, you want to watch yourself grow. don't you? 
+              capture the experience of watching yourself as the main character in a movie. sign up to our waitlist to be notified when we launch! After all, you want to watch yourself grow. don't you? 
             </p>
             {errors.email && (
               <p className="border dark:border-white/25 border-[#704705] flex gap-x-3 items-center p-2 pl-5 max-w-md bg-gradient-to-r from-10% dark:from-[#704705] text-[#3a2503] from-[#f5a524] via-30% dark:via-black dark:to-black to-100% to-[#704705] mx-auto rounded-md dark:text-white ">
@@ -202,7 +202,7 @@ function PageHook() {
                 type="email"
               /> */}
 
-              {/*<Controller
+              {/* <Controller
                 name="email"
                 control={control}
                 defaultValue=""
@@ -223,13 +223,13 @@ function PageHook() {
                   // />
                   <script async data-uid="26f6bc2e32" src="https://my-biopik.ck.page/26f6bc2e32/index.js">  
                   </script>
-                )}*/}
+                )} */}
                 <ConvertKitForm
                   rules={{
-                    required: "you forgot entering your email, buddy!",
+                    required: "You forgot entering your email, buddy!",
                     validate: (value) =>
-                      validateEmail(value) || " oops! that's an invalid email",
-                }}
+                      validateEmail(value) || " Oops! that's an invalid email",
+                  }}
               />
 
               {/* <button
