@@ -178,7 +178,7 @@ const ConvertKitForm = () => {
             className="formkit-input"
             name="email_address"
             aria-label="Email"
-            placeholder="Email"
+            placeholder="email address here"
             required=""
             type="email"
           />
@@ -186,7 +186,7 @@ const ConvertKitForm = () => {
       </div>
       <button data-element="submit" className="formkit-submit">
         <TbArrowsJoin2 />
-        <span>Join Waitlist</span>
+        <span>sign me up, babe</span>
       </button>
     </form>
   );
