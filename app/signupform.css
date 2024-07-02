@@ -1,11 +1,10 @@
-/* .formkit-form {
+ .formkit-form {
     display: flex;
     align-items: center;
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 10px;
+    justify-content: space-between;
+    gap: 10px; /* Adjust as needed */
   }
-   */
+   
   .formkit-fields {
     display: flex;
     flex-grow: 1;
@@ -48,6 +47,7 @@
       margin-right: 0;
       margin-bottom: 10px;
       width: 100%;
+      flex-grow: 1;
     }
     
     /* .formkit-submit {
@@ -60,7 +60,8 @@
     align-items: center;
     justify-content: center;
     gap: 0.75rem;
-    background-image: linear-gradient(to top right, black 50%, rgba(0, 0, 0, 0.4) 45%, rgba(128, 128, 128, 0.4));
+    background-image: linear-gradient(135deg, #000000 0%, #333333 100%);
+    transition: background-image 0.3s ease;
     border-top: 1px solid #4a5568;
     border-right: none;
     border-bottom: none;
@@ -74,6 +75,7 @@
     font-weight: 500;
     font-size: 1rem;
     color: #e2e8f0;
+    flex-shrink: 0;
     transition: all 0.3s ease;
     overflow: hidden;
     white-space: nowrap;
@@ -153,3 +155,25 @@
     }
   }
   
+  .formkit-submit:hover {
+    background-image: linear-gradient(135deg, #333333 0%, #666666 100%);
+  }
+
+  .formkit-input,
+.formkit-submit {
+  height: 40px; /* Adjust to match your design */
+  border-radius: 20px; /* Half of the height for rounded corners */
+}
+
+.formkit-input {
+  padding: 0 15px;
+  border: 1px solid #ccc;
+}
+
+.formkit-submit {
+  padding: 0 20px;
+  color: white;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
