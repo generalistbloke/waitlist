@@ -1,0 +1,20 @@
+.input-style:focus {
+    border: 2px solid #f5f5f5;
+  }
+  
+  .input-style::placeholder {
+    color: #737373;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .input-style {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+  }
+  
+  .input-style.valid {
+    background-color: #22c55e;
+  }
+  

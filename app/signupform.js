@@ -64,6 +64,22 @@
 // }
 
 import React, { useEffect } from 'react';
+import './signupform.css'; 
+
+const formStyle = {
+  display: 'flex',
+  flexDirection: 'column',
+  maxWidth: '300px',
+  margin: '0 auto',
+  flex: 1,
+  padding: '0.625rem 0',
+  outline: 'none',
+  border: '1px solid #a3a3a3',
+  borderRadius: '0.5rem',
+  paddingLeft: '1.25rem',
+  boxShadow: '0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)',
+};
+
 
 const ConvertKitForm = () => {
   useEffect(() => {
@@ -88,20 +104,6 @@ const ConvertKitForm = () => {
       data-version="5"
       data-options='{"settings":{"after_subscribe":{"action":"message","success_message":"welcome onboard! We see your email in the waitlist.\n we will send a notification as soon as My Biopik is ready for you to experience.","redirect_url":""},"analytics":{"google":null,"fathom":null,"facebook":null,"segment":null,"pinterest":null,"sparkloop":null,"googletagmanager":null},"modal":{"trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"powered_by":{"show":true,"url":"https://convertkit.com/features/forms?utm_campaign=poweredby&amp;utm_content=form&amp;utm_medium=referral&amp;utm_source=dynamic"},"recaptcha":{"enabled":false},"return_visitor":{"action":"show","custom_content":""},"slide_in":{"display_in":"bottom_right","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15},"sticky_bar":{"display_in":"top","trigger":"timer","scroll_percentage":null,"timer":5,"devices":"all","show_once_every":15}},"version":"5"}'
       min-width="400 500 600 700 800"
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        maxWidth: '300px',
-        margin: '0 auto',
-        outline-none,
-        focus:border-2, 
-        focus:border-neutral-100, 
-        dark:border, dark:bg-opacity-20 shadow-md border 
-        border-neutral-400,   
-        dark:text-white, 
-        dark:border-white/20
-                
-      }}
     >
       <div data-style="clean">
         <ul
